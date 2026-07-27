@@ -1,4 +1,5 @@
 const axios = require("axios");
+
 require("dotenv").config();
 
 const { App } = require("@slack/bolt");
@@ -27,7 +28,8 @@ app.command("/dicey-help", async ({ ack, respond }) => {
     text:
 `Available Commands:
 /dicey-ping - Check bot latency
-/dicey-catfact - Get a cat fact`
+/dicey-catfact - Get a cat fact
+/dicey-joke - Get a random joke`
   });
 });
 
